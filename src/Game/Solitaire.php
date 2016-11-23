@@ -12,13 +12,13 @@ class Solitaire
 
     public function __construct(Deck $deck)
     {
-        $deck->shuffle();
         $this->deck = $deck;
     }
 
     public function deal()
     {
         $this->deal = [];
+        $this->deck->shuffle();
 
         for ($column = 0; $column < 7; ++$column) {
             for ($card = 0; $card <= $column; ++$card) {

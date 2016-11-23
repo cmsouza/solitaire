@@ -9,10 +9,7 @@ use Solitaire\Cards\Suits\Spades;
 
 class Deck
 {
-    const MAX_SIZE = 52;
-
     protected $cards = [];
-    protected $position;
 
     public function __construct()
     {
@@ -28,8 +25,6 @@ class Deck
                 $this->cards[] = new Card($i, $suit);
             }
         }
-
-        $this->position = 0;
     }
 
     public function shuffle()
