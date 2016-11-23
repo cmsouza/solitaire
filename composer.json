@@ -1,0 +1,22 @@
+{
+    "name": "cmsouza/solitaire",
+    "description": "PHP Solitaire",
+    "type": "project",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.7",
+        "phpmd/phpmd": "^2.4",
+        "phpunit/phpunit": "^5.6",
+        "friendsofphp/php-cs-fixer": "^1.12"
+    },
+    "license": "GPL v3",
+    "authors": [
+        {
+            "name": "Ciro Souza",
+            "email": "ciro.mies@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Solitaire\\": "src/"}
+    },
+    "require": {}
+}
